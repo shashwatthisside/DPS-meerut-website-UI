@@ -36,11 +36,11 @@
 
 .left-section{
     display: inline-block;
-    margin-left: 5em;
+    margin-left: 6em;
 }
 
 .left-section img{
-    width: 20.9em;
+    width: 23em;
     height: 4.8em;
 }
 
@@ -53,7 +53,7 @@
     align-items: center;
     justify-content: center;
     gap: 23px;
-    margin-right: 5em;
+    margin-right: 6em;
 }
 
 /* Left-Half of Right Section */
@@ -205,7 +205,7 @@ height: 18px;
         position: relative;
         color: var(--header-text);
         border-radius: 0 25px 25px 0;
-        padding: 8px 19px;
+        padding: 8px 4px;
         transition: 0.3s;
         margin: 0 13px;
         display: flex;
@@ -247,7 +247,8 @@ height: 18px;
 
 
       .btn-text{
-        font-size: 11px;
+        font-size: 12px;
+        margin-left: 15px;
       }
 
       .btn-icon img{
@@ -268,7 +269,7 @@ height: 18px;
         border: 1px solid white;
         text-decoration: none;
         width: 10.8em;
-    height: 2.2em;
+    height: 2.1em;
       }
 
 
@@ -277,10 +278,14 @@ height: 18px;
         height: 23px;
       }
 
+      .dropdown-toggle::after{
+        content: none;
+      }
+
 
       .lowerbtn-text{
         padding: 0px 3px 0px 6px;
-        font-size: 11px;
+        font-size: 12px;
       }
 
 
@@ -319,7 +324,7 @@ height: 18px;
     font-size: 13px;
     padding: 14px 3px;
     transition: all 0.2s ease;
-    font-weight:400 ;
+    font-weight:600 ;
 }
 
 .lower-container .dividing-line{
@@ -332,6 +337,24 @@ height: 18px;
     background-color: var(--link-hover);
 }
 
+.lower-header-text .dropdown-toggle::after{
+    content: none;
+}
+
+
+.sub-academics-links{
+    list-style: none;
+    padding: 0px;
+}
+
+
+
+.lower-header-text .dropdown-menu .dropdown-item{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #0B7C2D;
+}
 
 /* Updates Section */
 
@@ -357,7 +380,7 @@ height: 18px;
 
 
 .news-section-content .news-ending{
-    padding: 0px 34px;
+    padding: 0px 26px;
     background-color: #231834;
     color: var(--header-text);
     display: flex;
@@ -371,13 +394,13 @@ height: 18px;
 }
 
 .news-ending .news-text{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
 }
 
 .news-ending .news-icon img{
-    width:27px ;
-    height: 27px;
+    width:26px ;
+    height: 26px;
 }
 
 
@@ -389,9 +412,12 @@ height: 18px;
     position: absolute;
     /* border: 2px solid red; */
     display: inline-block;
-    animation: scroll-left 10s linear infinite;
+    animation:  scroll-left 15s linear infinite;
     width: 80%;
+}
 
+.news-running:hover{
+    animation-play-state:paused ;
 }
 @keyframes scroll-left {
     0% {
@@ -567,7 +593,7 @@ height: 18px;
 
 .strip-content{
     color: var(--header-text);
-    margin-left:-22em ;
+    margin-left:-32em ;
     
     
 }
@@ -593,9 +619,9 @@ height: 18px;
 }
 
 
-.welcome-header-content{
+/* .welcome-header-content{
     padding: 22px 0px;
-}
+} */
 
 .welcome-header-content .sub-heading{
     font-size: 13px;
@@ -624,7 +650,7 @@ height: 18px;
     background: url('../images/Group 270223/Group 270223.png');
     /* border: 2px solid black; */
     text-align: center;
-    padding: 42px 153px;
+    padding: 29px 46px;
     position: relative;
     overflow: hidden;
     gap: 10px;
@@ -657,7 +683,7 @@ height: 18px;
       outline: none;
       appearance: none;
       border-radius: 3px;
-      transition: all 0.5s ease;
+      transition: all 0.2s ease;
       font-weight: 500;
 }
 
@@ -727,7 +753,8 @@ height: 18px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 23px;
+    padding: 0px 0px;
+    justify-content: center;
 }
 
 
@@ -912,7 +939,7 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 56px;
     /* border: 2px solid black; */
 }
 
@@ -1058,16 +1085,21 @@ transition: all 0.2s ease;
 
 .news-card{
     height: 285px;
-    width: 500px;
-
+    width: 590px;
     /* border: 2px solid red; */
+}
+
+
+.news-card-only{
+    cursor: pointer;
 }
 
 .news-circular-cards{
     /* border: 2px solid black; */
     display: flex;
     margin-bottom: 54px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
     align-items: center;
     width: 100%;
 }
@@ -1084,10 +1116,14 @@ transition: all 0.2s ease;
     font-weight: 500;
 }
 
+.news-card-view-all a:hover{
+    text-decoration: underline;
+}
+
 
 .circular-body{
 height: 285px;
-padding: 0px 21px;
+padding: 0px 14px;
 background-color: #ffffff;
 }
 
@@ -1105,7 +1141,8 @@ background-color: #ffffff;
     box-shadow: 1px 1px 5px 2px grey;
     border-radius: 15px ;
     margin: 7px 28px;
-    padding: 12px 12px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .circular-content-item .content-title{
@@ -1115,7 +1152,7 @@ background-color: #ffffff;
 }
 
 .circular-content-item .content-description{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
@@ -1140,11 +1177,85 @@ background-color: #ffffff;
   /* Infrastructure Section */
 
 .infra-section{
-    height: 60vh;
+    height: 80vh;
     background:linear-gradient(to left,#E1C214,#F7EFC3);
 }
 
 
+
+.infra-section .infra-heading{
+    color: #383838;
+    padding: 45px 12px;
+}
+
+
+.infra-heading-main{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.infra-heading-sub{
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: start;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.infra-card{
+    width: 322px;
+    height: 380px;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+
+.infra-card .infra-card-image img{
+width: 100%;
+height: 100%;
+}
+
+
+.infra-card img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.infra-card-title{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0px;
+    z-index: 999;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-title-text{
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.card-title-underline{
+    width: 16%;
+    border-radius: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
 
 
 
